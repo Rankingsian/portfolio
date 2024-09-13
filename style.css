@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark mode background */
+    color: #e0e0e0; /* Light gray text color */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a; /* Darker header background */
+    color: #00ff00; /* Green text color for header */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #1a1a1a;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #00ff00; /* Green color for navigation links */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff; /* White color on hover */
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #1e1e1e; /* Slightly lighter section background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    color: #00ff00; /* Green color for headings */
+    text-align: center;
+}
+
+.icon, .social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}
